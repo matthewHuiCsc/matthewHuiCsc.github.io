@@ -216,6 +216,11 @@ section.page ol {
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+    .page .page-content {
+      box-shadow: 1px 2px 3em #000;
+      background-color: #dddddd;
+    }
+
     section.page p {
       font-size: 2em;
     }
