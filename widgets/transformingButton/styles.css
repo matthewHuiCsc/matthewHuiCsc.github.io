@@ -1,0 +1,21 @@
+.transformingBtn {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition-property: all;
+  transition-duration: 0.2s;
+  border-radius: 0%;
+  border: none;
+}
+
+.transformingBtn:focus {
+  outline: 0;
+}
+
+.transformingBtn:hover {
+  background-color: #ccd;
+}
+
+.transformingBtn.liquid {
+  border-radius: 50%;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Matthew Hui</title>
+    <link rel="stylesheet" href="./widgets/transformingButton/styles.css">
+    <link rel="stylesheet" href="./widgets/slider/styles.css">
+    <link rel="stylesheet" href="./widgets/dropdownmenu/styles.css">
+    <link rel="stylesheet" href="./styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Not a particularly important feature for now.. come back to it later -->
+    <!-- <nav class="navbar">
+      <ul class="navlist">
+        <li><a href="#header">H</a></li>
+        <li><a href="#page1">1</a></li>
+        <li><a href="#page2">2</a></li>
+        <li><a href="#page3">3</a></li>
+        <li><a href="#page4">4</a></li>
+        <li><a href="#page5">5</a></li>
+      </ul>
+    </nav> -->
+    <section id="header" class="page navable nav-ghost whoami header-mode">
+      <div class="whoami-content">
+        <div class="header-nav-bar">
+          <div class="flex-vertical-center">
+            <div class="flex-filler"></div>
+            <div class="dropdownMenu">
+              <button class="dropdownMenuBtn">
+                <img src="./svg/1461632064_menu-alt.svg" class="navIcon" />
+              </button>
+              <ul class="dropdownMenuContent navMenuList">
+                <li><a class="navlink" href="#whoami">Who Am I?</a></li>
+                <li><a class="navlink" href="#portfoliopurpose">Portfolio Purpose</a></li>
+                <li><a class="navlink" href="#experiences">Experiences</a></li>
+                <li><a class="navlink" href="#projectpipeline">Project Pipeline</a></li>
+              </ul>
+            </div>
+            <div class="flex-filler"></div>
+          </div>
+          <div class="flex-filler"></div>
+          <div class="name">
+            <div class="flex-filler"></div>
+            <span class="firstLetter">M</span><span class="otherLetters">atthew</span>
+            <span class="firstLetter">H</span><span class="otherLetters">ui</span>
+            <div class="flex-filler"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="filler" class="filler"></section>
+    <section id="whoami" class="page navable flex-vertical-center">
+      <div class="flex-filler"></div>
+      <div class="page-content">
+        <label class="title">Who Am I?</label>
+        <div class="content">
+          <p>
+            My name is Matthew Hui. I am a software engineer and I love working on frontend web development code. Recently I have grown interested in mobile development, but my strong suit is still in the web for now.
+          </p>
+
+          <p>
+            As for other hobbies, I enjoy running, biking, hiking, and most racket sports. :) As a future project, I will probably take my fitbit data and show some cute charts to show how I am doing.
+          </p>
+
+          <p>
+            If you would like to know a little more about me, feel free to contact me via <a href="mailto:matthew.hui.csc@gmail.com">email</a> or checkout my <a target="_blank" href="https://www.linkedin.com/in/mhui8688">LinkedIn profile</a>.
+          </p>
+        </div>
+      </div>
+      <div class="flex-filler"></div>
+    </section>
+    <section id="portfoliopurpose" class="page navable flex-vertical-center">
+      <div class="flex-filler"></div>
+        <div class="page-content">
+          <label class="title">Portfolio Purpose</label>
+          <div class="content">
+            <p>
+              I created this portfolio mainly as a way of practicing my native javascripts. This portfolio is built completely from scratch. That means no libraries, no frameworks, just good ole fashioned HTML / CSS / Javascript :).
+            </p>
+            <p>
+              If you have any suggestions for improvements, or comments on my portfolio, please feel free to <a href="mailto:matthew.hui.csc@gmail.com">drop me an email</a>.
+            </p>
+          </div>
+        </div>
+      <div class="flex-filler"></div>
+    </section>
+    <section id="experiences" class="page navable flex-vertical-center">
+      <div class="flex-filler"></div>
+      <div class="page-content">
+        <label class="title">Experiences</label>
+        <div class="content">
+          <p>
+            During my time in Trifacta (2014-2015), I've mostly worked on handling the metadata related pages (i.e how a user can perform CRUD operations for datasets, sources, and admin pages. But in a more user-friendly way).
+          </p>
+          <p>
+            In Symantec (2012-2014), I've played several roles for the Data Loss Prevention product team. Some of those roles include building general UI widgets, establishing guidelines for other developers, helping other application developers with UI work, and even creating new product features.
+          </p>
+        </div>
+      </div>
+      <div class="flex-filler"></div>
+    </section>
+    <section id="projectpipeline" class="page navable flex-vertical-center">
+      <div class="flex-filler"></div>
+      <div class="page-content">
+        <label class="title">Projects Pipeline</label>
+        <div class="content">
+          <p>
+            The projects below are the items I am going to work on next in the following order. I will adjust as these priorities may change.
+          </p>
+          <ol>
+            <li>Portfolio</li>
+            <li>Retrieve Fitbit Data</li>
+            <li>Data Visualization</li>
+          </ol>
+        </div>
+      </div>
+      <div class="flex-filler"></div>
+    </section>
+    <script src="./namespace.js"></script>
+    <script src="./nav.js"></script>
+    <script src="./header.js"></script>
+    <script src="./widgets/slider/slider.js"></script>
+    <script src="./widgets/transformingButton/transformingButton.js"></script>
+    <script src="./widgets/dropdownmenu/dropdownMenu.js"></script>
+    <script src="./widgets/inViewportDetector/inViewportDetector.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

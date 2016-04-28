@@ -1,0 +1,15 @@
+.dropdownMenu {
+  position: relative;
+}
+
+.dropdownMenuContainer {
+  position: absolute;
+  overflow: hidden;
+  box-shadow: 2px 5px 12px #000;
+  transition: opacity 0.5s ease; /* FIXME this is tied to same value as slider animation */
+  opacity: 1;
+}
+
+.dropdownMenuContainer.closed {
+  opacity: 0;
+}

@@ -1,0 +1,37 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-btn {
+	padding: 2em;
+  background-color: #ff3333;
+  border: none;
+  border-radius: 0.5em;
+  transition: 0.1s box-shadow ease-in, 0.10s background-color ease-in;
+  outline: none;
+}
+
+.nav-btn.open-below {
+  background-color: #33ff33;
+  transition: 0.1s background-color ease-out, 0.1s box-shadow ease-out;
+}
+
+/*.open-below {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}*/
+
+.nav-menu {
+  background-color: #33ff33;
+  width: 300px;
+  height: 300px;
+  display: none;
+  position: absolute;
+  opacity: 0.7;
+}
+
+.nav-menu.open {
+  display: block;
+}

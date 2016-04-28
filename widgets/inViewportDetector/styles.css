@@ -1,0 +1,50 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.detectionBox {
+  height: 50%;
+  width: 100%;
+  background-color: #f00;
+  opacity: 0.2;
+  top: 0;
+  position: fixed;
+}
+
+.toDetect {
+  height: 200px;
+  width: 200px;
+  background-color: #00f;
+  opacity: 0.2;
+  position: absolute;
+  top: 200%;
+}
+
+.horizontalToDetect {
+  height: 200px;
+  width: 200px;
+  background-color: #0ff;
+  opacity: 0.2;
+  position: absolute;
+  left: 200%;
+}
+
+.notDetect {
+  height: 300px;
+  width: 300px;
+  background-color: #0f0;
+  opacity: 0.3;
+  position: absolute;
+  top: calc(250% + 200px);
+}

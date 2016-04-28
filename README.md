@@ -1,0 +1,1 @@
+This portfolio is written with just Javascript. No libraries, no frameworks, just a way for me to display my capabilities without the need of existing solutions. :) Well.. at least it is library-less at the time of the creation of this readme. :D

@@ -1,0 +1,260 @@
+/**
+  FIXME, could use some cleaning
+**/
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-filler {
+  flex: 2;
+}
+
+.flex-vertical-center {
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  height: 100%;
+}
+
+section.page {
+  min-height: 100%;
+}
+
+section.page label.title {
+  font-size: 8em;
+  margin: 0;
+  padding: 0;
+}
+
+section.page p, section.page ol {
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+}
+
+section.page p + p, section.page p + ol {
+  margin-top: 2em;
+}
+
+section.page ol {
+  margin-left: 1em; // to account for the numbering
+}
+
+.page {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  background-color: #777;
+}
+/*#page1.focused { background-color: #cc3333; }
+#page2.focused { background-color: #336633; }
+#page3.focused { background-color: #3333cc; }
+#page4.focused { background-color: #cccc33; }
+#page5.focused { background-color: #cc33cc; }*/
+
+.whoami {
+  display: flex;
+  background-color: #22223e;
+  color: #cfc;
+  transition-duration: 1s;
+  transition-property: background-color color;
+}
+
+.whoami.header-mode {
+  color: #fff;
+  background-color: #000;
+}
+
+.whoami.nav-mode {
+  position: fixed;
+  top: -80%;
+  width: 100%;
+}
+
+.whoami.header-mode + .filler {
+  display: none;
+}
+
+.whoami.nav-mode + .filler {
+  display: inherit;
+  height: 100%;
+}
+
+.whoami-content {
+  display: flex;
+  align-self: flex-end;
+  width: 100%;
+}
+
+.whoami-content .header-nav-bar {
+  display: flex;
+  align-self: flex-end;
+  justify-content:flex-end;
+  width: 100%;
+}
+
+/*.nav-list {
+  display: flex;
+  margin-left: 4em;
+}
+
+.nav-list > li {
+  display: inline-block;
+}
+
+.nav-list > li:not(:last-child)::after {
+  content: "|";
+  padding: 0 1em;
+}
+
+.whoami.header-mode .nav-list > li {
+  font-size: 2.5em;
+  transition: 1s font ease-out;
+}
+
+.whoami.nav-mode .nav-list > li{
+  font-size: 2em;
+  transition: 0.2s font ease-out;
+}*/
+
+.whoami-content .name {
+  display: flex;
+  align-self: center;
+}
+
+.whoami.header-mode > .whoami-content .name {
+  font-size: 20em;
+  transition: 1s margin ease-out, 1s font ease-out;
+}
+
+.whoami.nav-mode > .whoami-content {
+  height: 20%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.whoami.nav-mode > .whoami-content .name {
+  margin-right: 1em;
+  font-size: 5em;
+  transition: .175s margin ease-in, .175s font ease-in;
+}
+
+.otherLetters {
+  transition-duration: 0.2s;
+  transition-property: font;
+}
+
+.whoami.header-mode > .whoami-content .otherLetters {
+  font-size: 0;
+}
+
+.whoami.nav-mode > .whoami-content .otherLetters {
+  font-size: inherit;
+}
+
+.whoami.header-mode .dropdownMenu {
+  transition: visibility 0.1s ease;
+  visibility: hidden;
+}
+
+.whoami.nav-mode .dropdownMenu {
+  visibility: visible;
+}
+
+.navIcon {
+  height: 2em;
+  width: 2em;
+  fill: #f00;
+}
+
+.dropdownMenuBtn {
+  font-size: 3em;
+  width: 4em;
+  height: 4em;
+  margin-left:2em;
+}
+
+.navMenuList {
+  padding: 2vh;
+  list-style-type: none;
+  background-color: #22223e;
+}
+
+.navMenuList > li {
+  white-space: nowrap;
+}
+
+.navMenuList > li > a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 4em;
+  transition: background-color 0.2s ease;
+  width: 100%;
+  padding: 3vh 0;
+}
+
+.navMenuList > li > a:hover {
+  background-color: #3e2222;
+}
+
+.navMenuList > li > a:active {
+  background-color: #ff0;
+}
+
+
+@media only screen
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    section.page p {
+      font-size: 2em;
+    }
+
+    section.page label.title {
+      font-size: 5em;
+    }
+
+    section.page .content {
+      padding-top: 2em;
+    }
+}
+
+@media screen
+  and (min-device-width: 1024px) {
+    .navMenuList > li > a {
+      font-size: 2em;
+    }
+
+    .dropdownMenuBtn {
+      font-size: 2em;
+      width: 4em;
+      height: 4em;
+      margin-left:2em;
+    }
+
+    section.page .content {
+      padding-top: 3em;
+    }
+}
+
+.page-content {
+  padding: 5vh;
+  border: 2px solid #000;
+  margin: 20% 10% 10% 10%;
+  transition: background-color 0.5s ease, box-shadow 1s ease;
+}
+
+.page.focused .page-content {
+  box-shadow: 1px 2px 3em #000;
+  background-color: #dddddd;
+}
